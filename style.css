@@ -21,3 +21,11 @@ body{
   border-top: 6pt solid var(--bps-green);
   border-bottom: 6pt solid var(--bps-red);
 }
+
+a {
+  color: var(--bps-green);
+}
+
+a:hover{
+  text-decoration: none;
+}
