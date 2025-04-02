@@ -41,6 +41,30 @@ a:hover {
   text-decoration: none;
 }
 
+.callaction {
+  max-width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 2em;
+  padding-top:0.5em;
+  padding-bottom:0.5em;
+  border-top: 2pt solid var(--bps-red);
+  border-bottom: 2pt solid var(--bps-red);
+}
+
+.callaction p{
+  margin-left:3em;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+
+.callaction img {
+  float: left;
+  width: 2em;
+  height: 2em;
+}
+
 .contact td {
   padding-right:10px;
 }
