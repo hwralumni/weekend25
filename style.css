@@ -1,0 +1,23 @@
+:root {
+  --bps-green:#006d5b;
+  --bps-red:#d50c2f;
+}
+
+body{
+  font-family:sans-serif;
+  background-color:#efefef;
+}
+
+#main{
+  max-width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:25px;
+  margin-bottom:50px;
+  padding:25px;
+  padding-left:50px;
+  padding-right:50px;
+  background-color:white;
+  border-top: 6pt solid var(--bps-green);
+  border-bottom: 6pt solid var(--bps-red);
+}
