@@ -3,17 +3,28 @@
   --bps-red:#d50c2f;
 }
 
-body{
+body {
   font-family:sans-serif;
   background-color:#efefef;
 }
 
-#main{
+#notice {
+  max-width:700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom:50px;
+  
+  font-size:80%;
+  color:black;
+}
+
+
+#main {
   max-width:700px;
   margin-left: auto;
   margin-right: auto;
   margin-top:25px;
-  margin-bottom:50px;
   padding:25px;
   padding-left:50px;
   padding-right:50px;
@@ -26,6 +37,17 @@ a {
   color: var(--bps-green);
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
+
+.contact td {
+  padding-right:10px;
+}
+
+.contact img {
+  width:1em;
+  margin-right:0.3em;
+}
+
+
