@@ -18,9 +18,7 @@
       	<img src="feather/play-circle.svg"/>
         <p><strong><a href="https://www.berlin-professional-school.de/en/service/alumni/events/translate-to-english-alumni-event-berlin-part-time-mba">Register now to the Alumni Weekend through this BPS form</a>.</strong></p>
       </div>
-      <p>
-        We are looking forward to seeing you!
-      </p>
+      <p id="countdown"></p>
       <h2>Contacts</h2>
       <p>
         Please feel free to reach out if you have any questions or comments.
@@ -59,5 +57,36 @@
     <div id='notice'>
       <p>Icons from <a href="https://feathericons.com/">Feather</a>, Copyright (c) 2013-2023 Cole Bemis, <a href="https://github.com/feathericons/feather/blob/main/LICENSE">MIT License</a>.</p>
     </div>
+    <script>
+      var eventDate = new Date("Jun 21, 2025 10:00:00");
+
+      var x = setInterval(function () {
+        var now = new Date();
+        var distance = eventDate.getTime() - now.getTime();
+
+        // Get today's and event's date parts
+        var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+        var eventDay = new Date(eventDate.getFullYear(), eventDate.getMonth(), eventDate.getDate());
+
+        // Calculate days difference
+        var msPerDay = 24 * 60 * 60 * 1000;
+        var dayDiff = Math.round((eventDay - today) / msPerDay);
+
+        var output = "";
+
+        if (distance < 0) {
+          clearInterval(x);
+          output = "";
+        } else if (dayDiff === 0) {
+          output = "We are looking forward to seeing you <strong>today</strong>!";
+        } else if (dayDiff === 1) {
+          output = "We are looking forward to seeing you <strong>tomorrow</strong>!";
+        } else {
+          output = "We are looking forward to seeing you in <strong>" + dayDiff + " days</strong>.";
+        }
+
+        document.getElementById("countdown").innerHTML = output;
+      }, 1000);
+    </script>
   </body>
 </html>
