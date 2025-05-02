@@ -74,4 +74,32 @@ a:hover {
   margin-right:0.3em;
 }
 
+.agenda-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  font-family: sans-serif;
+}
+
+.agenda-item {
+  border-left: 5px solid var(--bps-green);
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.agenda-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.2em;
+}
+
+.agenda-title {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.agenda-description {
+  color: #444;
+}
 
